@@ -4,7 +4,11 @@ import { Helmet } from 'react-helmet'
 import { getHomeList } from './store/actions'
 import styles from './style.css'
 import withStyle from '../../withStyle'
-
+/**
+ * Redux 的 React 绑定库是基于 容器组件和展示组件相分离 的开发思想
+ * 展示组件数据来源props
+ * 容器组件数据来源监听Redux state
+ */
 class Home extends Component {
   getList() {
     const { list } = this.props
